@@ -73,55 +73,6 @@ Depois, acesse: [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🧪 Testes Unitários
-
-Este projeto utiliza o [Jest](https://jestjs.io/) para testes unitários, garantindo a estabilidade e confiabilidade dos componentes e funcionalidades principais.
-
-### ▶️ Executando os testes
-
-Para rodar todos os testes:
-
-```bash
-npm run test
-# ou
-bun test
-```
-### 🗂 Estrutura dos testes
-
-Os testes ficam localizados dentro da pasta `src/__tests__/`, organizados por funcionalidade ou componente:
-
-```
-src/
-├── components/
-│   └── MeuComponente.tsx
-├── __tests__/
-│   └── MeuComponente.test.tsx
-```
-### 📋 Exemplo de teste com Jest + React Testing Library
-
-```ts
-import { render, screen } from '@testing-library/react'
-import MeuComponente from '../components/MeuComponente'
-
-describe('MeuComponente', () => {
-  it('deve renderizar o texto corretamente', () => {
-    render(<MeuComponente />)
-    expect(screen.getByText('Texto esperado')).toBeInTheDocument()
-  })
-})
-```
-### ✅ Cobertura de testes
-
-Para gerar o relatório de cobertura:
-
-```bash
-npm run test:coverage
-```
-
-O relatório será gerado em `/coverage/lcov-report/index.html`.
-
----
-
 ## 🤝 Contribuindo
 
 Contribuições são sempre bem-vindas!
